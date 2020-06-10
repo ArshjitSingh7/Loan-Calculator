@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Calculator</h2>
+        <input type="number" id="loan-amount" placeholder="Loan Amount in ₹">
+        <input type="number" id="interest" placeholder="Interest in %">
+        <input type="number" id="years" placeholder="Years to repay">
+        <input type="submit" id="submit" value="calculate" class="btn">
+        <div class="loader">
+            <img src="loading.gif" alt="">
+        </div>
+        <div class="results">
+            <h2>Results</h2>
+            <label for="">Monthly Payment</label>
+            <input type="text" id="monthly-payment" disabled>
+            <label for="">Total Payment</label>
+            <input type="text" id="total-payment" disabled>
+            <label for="">Total Interest</label>
+            <input type="text" id="total-interest" disabled>
+        </div>
+      
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
